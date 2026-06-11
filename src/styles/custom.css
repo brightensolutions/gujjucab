@@ -1,0 +1,60 @@
+:root {
+  --primary-color: #ffa500;
+  --secondary-color: #4a4a4a;
+  --accent-color: #ff6347;
+  --text-light: #ffffff;
+  --text-dark: #333333;
+  --background-light: #f5f5f5;
+  --background-dark: #1a1a1a;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+.bg-custom-light {
+  background-color: var(--background-light);
+}
+
+.bg-custom-dark {
+  background-color: var(--background-dark);
+}
+
+.page-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Custom styles for dark mode */
+.dark .text-primary {
+  color: #ffd700;
+}
+
+.dark .text-secondary {
+  color: #b0b0b0;
+}
+
+.dark .text-accent {
+  color: #ff7f50;
+}
+
+.dark .bg-custom-light {
+  background-color: var(--background-dark);
+}
+
+.dark .bg-custom-dark {
+  background-color: var(--background-light);
+}
+
