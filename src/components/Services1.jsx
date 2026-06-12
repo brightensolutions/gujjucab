@@ -1,4 +1,11 @@
-import { FaTaxi, FaPlane, FaShuttleVan, FaCar } from "react-icons/fa"
+import {
+  FaTaxi,
+  FaPlane,
+  FaShuttleVan,
+  FaCar,
+  FaBuilding,
+  FaRoute,
+} from "react-icons/fa"
 import AOS from "aos"
 import "aos/dist/aos.css" // Import AOS CSS
 import { useEffect } from "react"
@@ -23,6 +30,16 @@ const services = [
     icon: <FaCar className="w-10 h-10" />,
     title: "Luxury Rides",
     description: "Premium vehicles for special occasions.",
+  },
+  {
+    icon: <FaBuilding className="w-10 h-10" />,
+    title: "Corporate Travel",
+    description: "Professional transportation solutions for businesses.",
+  },
+  {
+    icon: <FaRoute className="w-10 h-10" />,
+    title: "Outstation Trips",
+    description: "Safe and comfortable long-distance travel services.",
   },
 ]
 
@@ -68,7 +85,10 @@ const Services = () => {
 
         {/* Service Cards */}
         <div className="py-12 px-4 max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4" data-aos="fade-up">
+          <div
+  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
+  data-aos="fade-up"
+>
             {services.map((service, index) => (
               <div
                 key={index}

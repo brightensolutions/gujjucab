@@ -1,4 +1,12 @@
-import { FaTaxi, FaPlane, FaShuttleVan, FaCar, FaWhatsappSquare } from "react-icons/fa"
+import {
+  FaTaxi,
+  FaPlane,
+  FaShuttleVan,
+  FaCar,
+  FaRoute,
+  FaRoad,
+  FaWhatsappSquare,
+} from "react-icons/fa"
 import corporatelimo2 from "../assets/corporatelimo2-1.jpg"
 import woman from "../assets/woman-traveling.webp"
 import weddingcab1 from "../assets/wedding-cab1.jpg"
@@ -29,6 +37,16 @@ const services = [
     icon: <FaCar className="h-10 w-10" />,
     title: "Luxury Rides",
     description: "Premium vehicles for special occasions.",
+  },
+  {
+    icon: <FaRoute className="h-10 w-10" />,
+    title: "One-Way Outstation",
+    description: "Convenient one-way outstation taxi service at affordable rates.",
+  },
+  {
+    icon: <FaRoad className="h-10 w-10" />,
+    title: "Intercity Travel",
+    description: "Comfortable and safe travel between cities with professional drivers.",
   },
 ]
 
@@ -230,7 +248,7 @@ const Services = () => {
           <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-8 md:mb-12 text-gray-900">
             Our Transportation Services
           </h2>
-          <div className="grid grid-cols-1 gap-4 sm:gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-4 sm:gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service, index) => (
               <div
                 key={index}
