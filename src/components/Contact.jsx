@@ -144,22 +144,22 @@ const Contact = () => {
             <ContactInfo
               icon={Phone}
               title="Phone Number"
-              content="+1 (555) 123-4567"
-              link="tel:+15551234567"
+              content="+91 6355043288"
+              link="tel:916355043288"
             />
             <div className="pt-8 border-t border-gray-200 dark:border-gray-700">
               <ContactInfo
                 icon={Mail}
                 title="Email Address"
-                content="info@luxurycabs.com"
-                link="mailto:info@luxurycabs.com"
+                content="info@gujjucabs.com"
+                link="mailto:info@gujjucabs.com"
               />
             </div>
             <div className="pt-8 border-t border-gray-200 dark:border-gray-700">
               <ContactInfo
                 icon={MapPin}
                 title="Office Location"
-                content="123 Business Avenue, New York, NY 10001"
+                content="Surat"
               />
             </div>
             <div className="pt-8 border-t border-gray-200 dark:border-gray-700">
