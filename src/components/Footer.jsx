@@ -152,15 +152,15 @@ const Footer = () => {
                   <li className="flex items-center gap-2 text-gray-400">
                     <Mail className="h-5 w-5 text-yellow-500" />
                     <a href="mailto:info@gujjucab.com" className="hover:text-white transition-colors duration-300">
-                      info@gujjucab.com
+                      info@gujjucabs.com
                     </a>
                   </li>
 
                   {/* Phone Number */}
                   <li className="flex items-center gap-2 text-gray-400">
                     <Phone className="h-5 w-5 text-yellow-500" />
-                    <a href="tel:916355043288" className="hover:text-white transition-colors duration-300">
-                      +91 6355043288
+                    <a href="tel:919265647942" className="hover:text-white transition-colors duration-300">
+                      +919265647942
                     </a>
                   </li>
 
@@ -168,7 +168,7 @@ const Footer = () => {
                   <li className="flex items-center gap-2 text-gray-400">
                     <MapPin className="h-5 w-5 text-yellow-500" />
                     <span className="hover:text-white transition-colors duration-300">
-                      123 Street, Surat, Gujarat
+                      B tower -104, pragati Nagar, Piplod, Surat, Gujarat 395007·1.4 km
                     </span>
                   </li>
                 </ul>
