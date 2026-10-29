@@ -48,7 +48,11 @@ const Home = () => {
     // Dono tabs ka data ek saath bhejna
     message = `${transferMessage}\n\n\n${hourlyMessage}`;
   
+<<<<<<< HEAD
     const phoneNumber = "919265647942"; // Replace with your WhatsApp number
+=======
+    const phoneNumber = "1234567890"; // Replace with your WhatsApp number
+>>>>>>> 0e275094a3560bf2240aab8712d899281bb12149
     const encodedMessage = encodeURIComponent(message);
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
   
