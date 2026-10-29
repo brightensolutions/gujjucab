@@ -1,7 +1,7 @@
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Phone, Mail, MapPin } from "lucide-react";
-import { NavLink, Link } from "react-router-dom";
-import logo from "../assets/Gujju Cab.svg"
+import { NavLink } from "react-router-dom";
+// import logo from "../assets/Gujju Cab.svg";
 
 const Footer = () => {
   // Function to scroll to the top of the page
@@ -16,16 +16,21 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 xl:grid-cols-3 xl:gap-16">
           {/* Left Section: Brand Info and Social Media */}
           <div className="space-y-8">
-          <div className="flex items-center">
-          {/* <Link to="/" className="flex items-center">
-              <img src={logo || "/placeholder.svg"} alt="Gujju Cab" className="h-12 w-auto" />
-            </Link> */}
-            <h2 className="text-3xl font-bold">GUJJU<span className="text-yellow-400 dark:text-white">CAB</span></h2>
+            <div className="flex items-center">
+              {/* <Link to="/" className="flex items-center">
+                <img src={logo || "/placeholder.svg"} alt="Gujju Cab" className="h-12 w-auto" />
+              </Link> */}
+              <h2 className="text-3xl font-bold">
+                GUJJU<span className="text-yellow-400 dark:text-white">CAB</span>
+              </h2>
             </div>
 
             <p className="text-gray-400 text-base">
-              Your trusted partner for comfortable and safe rides. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minima et omnis provident quod vitae dolorem fuga rem? Corporis.
+              Your trusted partner for comfortable and safe rides. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Necessitatibus minima et omnis provident quod vitae
+              dolorem fuga rem? Corporis.
             </p>
+
             {/* Social Media Links */}
             <div className="flex space-x-6">
               {/* Facebook */}
@@ -39,7 +44,8 @@ const Footer = () => {
                 href="#"
                 className="text-yellow-500 transition-colors duration-300 hover:scale-110"
                 style={{
-                  background: "linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4, #405DE6, #C13584)",
+                  background:
+                    "linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4, #405DE6, #C13584)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -105,7 +111,7 @@ const Footer = () => {
                     <NavLink
                       to="/"
                       className="text-base text-gray-400 hover:text-white transition-colors duration-300"
-                      onClick={scrollToTop} // Scroll to top when clicked
+                      onClick={scrollToTop}
                     >
                       Home
                     </NavLink>
@@ -114,7 +120,7 @@ const Footer = () => {
                     <NavLink
                       to="/about"
                       className="text-base text-gray-400 hover:text-white transition-colors duration-300"
-                      onClick={scrollToTop} // Scroll to top when clicked
+                      onClick={scrollToTop}
                     >
                       About
                     </NavLink>
@@ -123,7 +129,7 @@ const Footer = () => {
                     <NavLink
                       to="/services"
                       className="text-base text-gray-400 hover:text-white transition-colors duration-300"
-                      onClick={scrollToTop} // Scroll to top when clicked
+                      onClick={scrollToTop}
                     >
                       Corporate Services
                     </NavLink>
@@ -132,7 +138,7 @@ const Footer = () => {
                     <NavLink
                       to="/contact"
                       className="text-base text-gray-400 hover:text-white transition-colors duration-300"
-                      onClick={scrollToTop} // Scroll to top when clicked
+                      onClick={scrollToTop}
                     >
                       Contact
                     </NavLink>
@@ -150,25 +156,31 @@ const Footer = () => {
                 <ul className="mt-4 space-y-4">
                   {/* Email */}
                   <li className="flex items-center gap-2 text-gray-400">
-                    <Mail className="h-5 w-5 text-yellow-500" />
-                    <a href="mailto:info@gujjucab.com" className="hover:text-white transition-colors duration-300">
+                    <Mail className="h-5 w-5 shrink-0 text-yellow-500" />
+                    <a
+                      href="mailto:info@gujjucabs.com"
+                      className="hover:text-white transition-colors duration-300"
+                    >
                       info@gujjucabs.com
                     </a>
                   </li>
 
                   {/* Phone Number */}
                   <li className="flex items-center gap-2 text-gray-400">
-                    <Phone className="h-5 w-5 text-yellow-500" />
-                    <a href="tel:919265647942" className="hover:text-white transition-colors duration-300">
-                      +919265647942
+                    <Phone className="h-5 w-5 shrink-0 text-yellow-500" />
+                    <a
+                      href="tel:+919265647942"
+                      className="hover:text-white transition-colors duration-300"
+                    >
+                      +91 92656 47942
                     </a>
                   </li>
 
                   {/* Address */}
-                  <li className="flex items-center gap-2 text-gray-400">
-                    <MapPin className="h-5 w-5 text-yellow-500" />
+                  <li className="flex items-start gap-2 text-gray-400">
+                    <MapPin className="h-5 w-5 shrink-0 mt-1 text-yellow-500" />
                     <span className="hover:text-white transition-colors duration-300">
-                      B tower -104, pragati Nagar, Piplod, Surat, Gujarat 395007·1.4 km
+                      B tower -104, Pragati Nagar, Piplod, Surat, Gujarat 395007
                     </span>
                   </li>
                 </ul>
