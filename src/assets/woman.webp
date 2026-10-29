@@ -1,0 +1,7 @@
+const slider1 = "/placeholder.svg?height=600&width=1200";
+const slider2 = "/placeholder.svg?height=600&width=1200";
+const slider3 = "/placeholder.svg?height=600&width=1200";
+
+export default slider1;
+export { slider2, slider3 };
+
